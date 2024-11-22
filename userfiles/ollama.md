@@ -13,7 +13,7 @@ export OLLAMA_ORIGINS=*
 
 export OLLAMA_MAX_LOADED_MODELS=3
 export OLLAMA_NUM_PARALLEL=5
-export OLLAMA_KEEP_ALIVE=1
+export OLLAMA_KEEP_ALIVE=-1
 
 nohup ollama serve > ollama.log 2>&1 &
 
