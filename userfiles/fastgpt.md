@@ -5,7 +5,6 @@ docker-compose -v
 # Linux 快速脚本 milvus
 cd /workspaces/FastGPT/userfiles
 
-
 # pgvector 版本(测试推荐，简单快捷)
 curl -o docker-compose.yml https://raw.githubusercontent.com/labring/FastGPT/main/files/docker/docker-compose-pgvector.yml
 
