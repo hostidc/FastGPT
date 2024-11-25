@@ -5,6 +5,17 @@ docker-compose -v
 # Linux 快速脚本 milvus
 cd /workspaces/FastGPT/userfiles
 
+
+# pgvector 版本(测试推荐，简单快捷)
+curl -o docker-compose.yml https://raw.githubusercontent.com/labring/FastGPT/main/files/docker/docker-compose-pgvector.yml
+
+# milvus 版本
+curl -o docker-compose.yml https://raw.githubusercontent.com/labring/FastGPT/main/files/docker/docker-compose-milvus.yml
+
+# zilliz 版本
+curl -o docker-compose.yml https://raw.githubusercontent.com/labring/FastGPT/main/files/docker/docker-compose-zilliz.yml
+
+
 # 启动容器
 docker-compose up -d
 
