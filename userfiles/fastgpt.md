@@ -18,3 +18,5 @@ docker-compose down
 
 docker-compose up -d
 
+ifconfig
+http://172.18.0.1:11434

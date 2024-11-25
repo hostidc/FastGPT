@@ -1,7 +1,6 @@
 # ollama-ui workspaces
 
-cd /workspaces/FastGPT/userfiles
-
+cd userfiles
 
 mkdir /tmp/ollamamodels
 curl -fsSL https://ollama.com/install.sh | sh
@@ -17,11 +16,23 @@ export OLLAMA_KEEP_ALIVE=-1
 
 nohup ollama serve > ollama.log 2>&1 &
 
+ps -ef |grep ollama
+
 df -h
 ollama list
-ollama run qwen2.5:7b
-ollama run llama3.1:8b
-ollama pull nomic-embed-text
+ollama pull qwen2.5:7b
+ollama pull llama3.1:8b
+ollama pull nomic-embed-text:latest
+
+
+ollama pull gemma2:9b
+ollama pull glm4:9b
+
+ollama pull smartcreation/bge-large-zh-v1.5:latest
+ollama pull nomic-embed-text:latest
+ollama pull davisgao/m3e:latest
+
+
 df -h
 cd /workspaces/ollama-ui
 
