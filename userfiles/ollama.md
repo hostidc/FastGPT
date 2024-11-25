@@ -22,6 +22,10 @@ df -h
 ollama list
 ollama pull qwen2.5:7b
 ollama pull llama3.1:8b
+
+ollama pull qwen2.5:3b
+ollama pull llama3.2:3b
+
 ollama pull nomic-embed-text:latest
 
 
