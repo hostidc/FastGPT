@@ -26,8 +26,10 @@ ollama pull llama3.1:8b
 ollama pull qwen2.5:3b
 ollama pull llama3.2:3b
 
-ollama pull nomic-embed-text:latest
+ollama pull qwen2.5:1.5b
+ollama pull llama3.2:1b
 
+ollama pull nomic-embed-text:latest
 
 ollama pull gemma2:9b
 ollama pull glm4:9b
